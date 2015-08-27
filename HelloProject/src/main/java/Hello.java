@@ -29,7 +29,8 @@ public class Hello extends HttpServlet implements Servlet {
     {
 	String pageTitle = "Just a Simple Servlet";
 	request.setAttribute("title", pageTitle);
-	request.getRequestDispatcher("/index.jsp").forward(request, response);
+	request.getRequestDispatcher("/jsp/index.jsp").forward(request, response);
+//	getServletContext().getRequestDispatcher("/jsp/index.jsp").forward(request, response);
     }
 
 }
